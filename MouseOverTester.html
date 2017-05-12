@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	
+	<img id="imgPlayerControl" src="images/PlayerControlStill.jpg" />
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+		    $("#imgPlayerControl").hover(
+		        function()
+		        {
+		            $(this).attr("src", "images/PlayerControlSnapshot.gif");
+		        },
+		        function()
+		        {
+		            $(this).attr("src", "images/PlayerControlStill.jpg);
+		        }                         
+		    );                  
+		});
+	</script>
+</html>
